@@ -57,8 +57,8 @@ function izrisi_kroznico(r)
     x = r * cos(theta);
     y = r * sin(theta);
     plot(x, y, 'red', 'LineWidth', 2.8, 'LineStyle','-.');
-    title('ocenjena vrednost pi');
+    title(['Ocenjena vrednost π: ', num2str(ocenaPi)]);
     xlabel('X-os');
     ylabel('Y-os');
-    Legend('Znotraj krožnice','Zunaj krožnice','Krožnica','northeastoutside')
+    legend('Znotraj krožnice', 'Zunaj krožnice', 'Krožnica','Location','northeastoutside')
 end
