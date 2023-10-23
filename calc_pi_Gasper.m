@@ -37,6 +37,10 @@ function izrisi_graf(n, r, ocenaPi)
     figure;
     izrisi_tocke(n, r);
     izrisi_kroznico(r);
+    title(['Ocenjena vrednost π: ', num2str(ocenaPi)]);
+    xlabel('X-os');
+    ylabel('Y-os');
+    legend('Znotraj krožnice', 'Zunaj krožnice', 'Krožnica','Location','northeastoutside')
 end
 
 function izrisi_tocke(n, r)
@@ -57,8 +61,4 @@ function izrisi_kroznico(r)
     x = r * cos(theta);
     y = r * sin(theta);
     plot(x, y, 'red', 'LineWidth', 2.8, 'LineStyle','-.');
-    title(['Ocenjena vrednost π: ', num2str(ocenaPi)]);
-    xlabel('X-os');
-    ylabel('Y-os');
-    legend('Znotraj krožnice', 'Zunaj krožnice', 'Krožnica','Location','northeastoutside')
 end
