@@ -57,4 +57,7 @@ function izrisi_kroznico(r)
     x = r * cos(theta);
     y = r * sin(theta);
     plot(x, y, 'red', 'LineWidth', 2.8, 'LineStyle','-.');
+    title('Metoda Monte Carlo');
+    xlabel('x-koordinate točk');
+    ylabel('y-koordiante točk')
 end
